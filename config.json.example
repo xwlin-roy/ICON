@@ -1,0 +1,107 @@
+{
+  "api_keys": {
+    "openai": {
+      "default": "YOUR_OPENAI_API_KEY",
+      "api_base": "https://api.openai.com/v1",
+      "models": {
+        "gpt-4": "",
+        "gpt-3.5-turbo": "",
+        "comment": "Configure model-specific API keys if needed"
+      }
+    },
+    "anthropic": {
+      "default": "YOUR_ANTHROPIC_API_KEY"
+    },
+    "google": {
+      "api_base": "https://generativelanguage.googleapis.com/v1",
+      "default": "YOUR_GOOGLE_API_KEY"
+    },
+    "qwen": {
+      "default": "YOUR_QWEN_API_KEY",
+      "api_base": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    },
+    "deepseek": {
+      "default": "YOUR_DEEPSEEK_API_KEY",
+      "api_base": "https://api.deepseek.com/v1"
+    }
+  },
+  "router_llm": {
+    "model_name": "gpt-4o",
+    "provider": "openai",
+    "temperature": 0.7,
+    "max_tokens": 1000
+  },
+  "paper_generator": {
+    "model_name": "gpt-4o",
+    "provider": "openai",
+    "temperature": 0.8,
+    "max_tokens": 4000
+  },
+  "script_generator": {
+    "model_name": "gpt-4o",
+    "provider": "openai",
+    "temperature": 0.8,
+    "max_tokens": 4000
+  },
+  "case_study_generator": {
+    "model_name": "gpt-4o",
+    "provider": "openai",
+    "temperature": 0.8,
+    "max_tokens": 4000
+  },
+  "cti_briefing_generator": {
+    "model_name": "gpt-4o",
+    "provider": "openai",
+    "temperature": 0.8,
+    "max_tokens": 4000
+  },
+  "rca_report_generator": {
+    "model_name": "gpt-4o",
+    "provider": "openai",
+    "temperature": 0.8,
+    "max_tokens": 4000
+  },
+  "target_llm": {
+    "model_name": "gpt-4o",
+    "provider": "openai",
+    "temperature": 0.0,
+    "max_tokens": 2000
+  },
+  "judge_llm": {
+    "model_name": "gpt-4o",
+    "provider": "openai",
+    "temperature": 0.0,
+    "max_tokens": 500
+  },
+  "reflector_llm": {
+    "model_name": "gpt-4o",
+    "provider": "openai",
+    "temperature": 0.7,
+    "max_tokens": 1500
+  },
+  "reflector": {
+    "max_tactical_retries": 3,
+    "max_strategic_retries": 1
+  },
+  "data": {
+    "data_dir": "data",
+    "harmful_behaviors_csv": "data/harmful_behaviors.csv"
+  },
+  "output": {
+    "output_dir": "output"
+  },
+  "logging": {
+    "log_dir": "logs",
+    "log_level": "INFO",
+    "log_to_file": false,
+    "log_to_console": true,
+    "log_sample_rate": 0.0,
+    "log_first_n": 0,
+    "enable_sample_logging": false
+  },
+  "proxy": {
+    "url": "",
+    "comment": "Optional proxy configuration. Priority: command line --proxy > environment variables HTTP_PROXY/HTTPS_PROXY > this config"
+  }
+}
+

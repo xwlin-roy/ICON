@@ -1,6 +1,6 @@
 # ICON
 
-The official implementation of our paper "ICON: Intent-aware Contextual Jailbreak Attack Framework"
+The official implementation of our paper "ICON: Intent-Context Coupling for Efficient Multi-Turn Jailbreak Attack"
 
 ![Jailbreak Attacks](https://img.shields.io/badge/Jailbreak-Attacks-yellow.svg?style=plastic)
 ![Adversarial Attacks](https://img.shields.io/badge/Adversarial-Attacks-orange.svg?style=plastic)
